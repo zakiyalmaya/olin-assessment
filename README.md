@@ -3,11 +3,24 @@ This is the answer to the test conducted by Olin (PT DPAI)
 
 ## Postgresql Test
 
-The answer to the postgresql test are located in the `postgresql_assessment` folder, which contains the query answer in `.sql` file and the simulation result in `.png` file.  
+The answer to the postgresql test are located in the `postgresql` folder, which contains the query answer in `.sql` file and the simulation result in `.png` file.  
 
 ## Golang Test
 
-The answer to the Golang test is implemented in the form of a REST API using clean architecture. Below is the API contract
+The answer to the Golang test is implemented in the form of a REST API using clean architecture and located in the `golang` folder. To run this application, follow this step:
+- Clone the repository
+
+    https://github.com/zakiyalmaya/olin-assessment.git
+
+- Navigate to the `golang` folder using the following command
+
+    cd .\golang\
+
+- Run the appliaction using the following command
+
+    go run .\main.go
+
+**API contract**
 
 1. **Question 1**
 
@@ -43,13 +56,13 @@ The answer to the Golang test is implemented in the form of a REST API using cle
 
     `GET /question2?nums={nums}`
 
-        curl --location 'http://localhost:8080/question2?nums=-1%2C1%2C0%2C-1%2C2'
+        curl --location 'http://localhost:8080/question2?nums=-1%2C1%2C0%2C-1%2C2%2C-4'
 
     *Query Param*
 
     | param | description | example |
     | :---: | :---: | :---: |       
-    | nums | array of number | -1,1,0,-1,2 |
+    | nums | array of number | -1,1,0,-1,2,-4 |
 
     - Response
 
@@ -57,7 +70,21 @@ The answer to the Golang test is implemented in the form of a REST API using cle
         HTTP/1.1 200 OK
         {
             "responseMessage": "success",
-            "answer": []
+            "answer": {
+                "Result": [
+                    [
+                        -1,
+                        -1,
+                        2
+                    ],
+                    [
+                        -1,
+                        0,
+                        1
+                    ]
+                ],
+                "TimeComplexity": "The time complexity is O(n^2) because there is a double nested loop. The first loop has a complexity of O(n), iterating through n array elements, while the second loop, which checks the result array, also has a complexity of O(n)."
+            }
         }
         ```
 
@@ -67,13 +94,13 @@ The answer to the Golang test is implemented in the form of a REST API using cle
     
     `GET /question3?sentence={sentence}&words={words}`
 
-        curl --location 'http://localhost:8080/question3?sentence=wordgoodgoodgoodbestword&words=word%2Cgood%2Cbest%2Cword'
+        curl --location 'http://localhost:8080/question3?sentence=wordgoodwordgoodbestword&words=word%2Cgood%2Cbest%2Cword'
 
     *Query Param*
 
     | param | description | example |
     | :---: | :---: | :---: |
-    | sentence | sentence in string | wordgoodgoodgoodbestword |
+    | sentence | sentence in string | wordgoodwordgoodbestword |
     | words | array of word | word,good,best,word |
 
     - Response
@@ -82,6 +109,8 @@ The answer to the Golang test is implemented in the form of a REST API using cle
         HTTP/1.1 200 OK
         {
             "responseMessage": "success",
-            "answer": []
+            "answer": [
+                8
+            ]
         }
         ```
