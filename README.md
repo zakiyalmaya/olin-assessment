@@ -9,16 +9,22 @@ The answer to the postgresql test are located in the `postgresql` folder, which 
 
 The answer to the Golang test is implemented in the form of a REST API using clean architecture and located in the `golang` folder. To run this application, follow this step:
 - Clone the repository
-
+   
+    ```sh
     https://github.com/zakiyalmaya/olin-assessment.git
+    ```
 
 - Navigate to the `golang` folder using the following command
 
+    ```sh
     cd .\golang\
+    ```
 
 - Run the appliaction using the following command
 
+    ```sh
     go run .\main.go
+    ```
 
 **API contract**
 
