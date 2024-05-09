@@ -1,8 +1,8 @@
-package golangassessment
+package application
 
 type serviceImpl struct {}
 
-func NewGolangAssessmentService() Service {
+func NewService() Service {
 	return &serviceImpl{}
 }
 

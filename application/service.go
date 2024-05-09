@@ -1,4 +1,4 @@
-package golangassessment
+package application
 
 type Service interface {
 	Question1(nums []int, target int) []int 
