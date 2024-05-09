@@ -26,14 +26,16 @@ The answer to the Golang test is implemented in the form of a REST API using cle
 
     - Response
 
-    HTTP/1.1 200 OK
-    {
-        "responseMessage": "success",
-        "answer": [
-            0,
-            1
-        ]
-    }
+        ```sh
+        HTTP/1.1 200 OK
+        {
+            "responseMessage": "success",
+            "answer": [
+                0,
+                1
+            ]
+        }
+        ```
 
 2. Question 2
 
@@ -51,11 +53,13 @@ The answer to the Golang test is implemented in the form of a REST API using cle
 
     - Response
 
-    HTTP/1.1 200 OK
-    {
-        "responseMessage": "success",
-        "answer": []
-    }
+        ```sh
+        HTTP/1.1 200 OK
+        {
+            "responseMessage": "success",
+            "answer": []
+        }
+        ```
 
 3. Question 3
 
@@ -74,8 +78,10 @@ The answer to the Golang test is implemented in the form of a REST API using cle
 
     - Response
 
-    HTTP/1.1 200 OK
-    {
-        "responseMessage": "success",
-        "answer": []
-    }
+        ```sh
+        HTTP/1.1 200 OK
+        {
+            "responseMessage": "success",
+            "answer": []
+        }
+        ```
