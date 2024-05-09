@@ -9,7 +9,7 @@ The answer to the postgresql test are located in the `postgresql_assessment` fol
 
 The answer to the Golang test is implemented in the form of a REST API using clean architecture. Below is the API contract
 
-1. Question 1
+1. **Question 1**
 
     - Request
 
@@ -37,7 +37,7 @@ The answer to the Golang test is implemented in the form of a REST API using cle
         }
         ```
 
-2. Question 2
+2. **Question 2**
 
     - Request
 
@@ -61,7 +61,7 @@ The answer to the Golang test is implemented in the form of a REST API using cle
         }
         ```
 
-3. Question 3
+3. **Question 3**
 
     - Request
     
