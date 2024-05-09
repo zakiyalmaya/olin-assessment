@@ -1,6 +1,6 @@
 -- Use postgres_fdw (Foreign Data Wrapper) to connect to the second database
 -- this is can be used for querying across multiple databases
--- please refer to this page for more details https://www.postgresql.org/docs/current/foreign-data.html
+-- https://www.postgresql.org/docs/current/foreign-data.html
 
 -- Instal the extention
 CREATE EXTENSION postgres_fdw;
