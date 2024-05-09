@@ -12,7 +12,7 @@ The answer to the Golang test is implemented in the form of a REST API using cle
 1. Question 1
 
     - Request
-    
+
     `GET /question1?nums={nums}&target={target}`
 
         curl --location 'http://localhost:8080/question1?nums=2%2C7%2C6%2C1%2C4&target=9'
@@ -26,14 +26,14 @@ The answer to the Golang test is implemented in the form of a REST API using cle
 
     - Response
 
-        HTTP/1.1 200 OK
-        {
-            "responseMessage": "success",
-            "answer": [
-                0,
-                1
-            ]
-        }
+    HTTP/1.1 200 OK
+    {
+        "responseMessage": "success",
+        "answer": [
+            0,
+            1
+        ]
+    }
 
 2. Question 2
 
@@ -51,11 +51,11 @@ The answer to the Golang test is implemented in the form of a REST API using cle
 
     - Response
 
-        HTTP/1.1 200 OK
-        {
-            "responseMessage": "success",
-            "answer": []
-        }
+    HTTP/1.1 200 OK
+    {
+        "responseMessage": "success",
+        "answer": []
+    }
 
 3. Question 3
 
@@ -74,8 +74,8 @@ The answer to the Golang test is implemented in the form of a REST API using cle
 
     - Response
 
-        HTTP/1.1 200 OK
-        {
-            "responseMessage": "success",
-            "answer": []
-        }
+    HTTP/1.1 200 OK
+    {
+        "responseMessage": "success",
+        "answer": []
+    }
